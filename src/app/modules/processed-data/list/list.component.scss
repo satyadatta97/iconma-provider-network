@@ -1,0 +1,20 @@
+.sc-table{
+    tr{
+      td{
+        &:nth-last-child(2) {
+          white-space: nowrap; 
+          width: 208px;
+          max-width: 208px; 
+          overflow: hidden;
+          text-overflow: ellipsis; 
+        }
+        &:nth-last-child(3) {
+          white-space: nowrap; 
+          width: 208px;
+          max-width: 208px; 
+          overflow: hidden;
+          text-overflow: ellipsis; 
+        }
+      }
+    }
+  }

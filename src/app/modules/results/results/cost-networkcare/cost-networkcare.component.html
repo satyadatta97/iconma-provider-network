@@ -1,0 +1,23 @@
+<div class="row statistics mt-3"> 
+    <div class="col-xl-6 col-lg-6 col-md-12">
+        <div class="theme-card dashboard-card-minheight mb-4">
+            <h6>Network Utilization </h6>
+            <div> <canvas id="networkUtilizationChart" height="362"></canvas></div>
+        </div>
+        <div class="theme-card dashboard-card-minheight">
+            <h6>PMPM Cost Comparison</h6>
+            <div> <canvas id="pmpmChart" height="362"></canvas></div>
+        </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-12">
+        <div class="theme-card dashboard-card-minheight mb-4">
+            <h6>In-Network vs. Out-of-Network Expenses</h6>
+            <div> <canvas id="expenseChart" height="362"></canvas></div>
+        </div>
+       
+        <div class="theme-card dashboard-card-minheight">
+            <h6>Cost Savings from In-Network Utilization ($)</h6>
+           <app-cost-savings-netwrok></app-cost-savings-netwrok>
+        </div>
+    </div>
+</div>

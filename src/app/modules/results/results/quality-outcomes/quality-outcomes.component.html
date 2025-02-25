@@ -1,0 +1,22 @@
+<div class="row statistics mt-3"> 
+    <div class="col-xl-6 col-lg-6 col-md-12">
+        <div class="theme-card dashboard-card-minheight mb-4">
+            <h6>Patient Outcomes Score</h6>
+            <div> <canvas id="patientOutcomeChart" height="362"></canvas></div>
+        </div>
+        <div class="theme-card dashboard-card-minheight">
+            <h6>Adherence to Clinical Guidelines vs. Complication Rate</h6>
+            <div> <canvas id="GuidelinesChart" height="362"></canvas></div>
+        </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-12">
+        <div class="theme-card dashboard-card-minheight mb-4">
+            <h6>Readmission Rates</h6>
+            <div> <canvas id="readmissionRateChart" height="362"></canvas></div>
+        </div>
+        <div class="theme-card dashboard-card-minheight">
+            <h6>Patient Satisfaction Scores</h6>
+            <app-patient-score></app-patient-score>
+        </div>
+    </div>
+</div>

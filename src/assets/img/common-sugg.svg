@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #c14616;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="150" height="150"/>
+    </clipPath>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Layer_1">
+      <g class="cls-3">
+        <g>
+          <path class="cls-1" d="M59.4,37.8h-6.1c-27.4,0-49.8,22.4-49.8,49.9v2.2c0,15.2,6.9,28.8,17.6,38,.1,0,0,.1,0,.3v18.6c0,1.1.6,1.4,1.7,1l18.6-7.5c.9-.5.8-.4,1.9-.4h31c24.7,0,45.4-18.2,49.2-41.9"/>
+          <path class="cls-1" d="M69.1,37.8h5.3c7.7,0,15,1.8,21.6,4.9"/>
+          <path class="cls-1" d="M120.7,8.7V2.2"/>
+          <path class="cls-1" d="M94.9,9.9l4.6,4.6"/>
+          <path class="cls-1" d="M146.5,9.9l-4.6,4.6"/>
+          <path class="cls-1" d="M120.7,76.3v-16.5"/>
+          <path class="cls-1" d="M109.8,76.3h21.8c1,0,1.8.8,1.8,1.8v7c0,1-.8,1.8-1.8,1.8h-21.8c-1,0-1.8-.8-1.8-1.8v-7c0-1,.8-1.8,1.8-1.8Z"/>
+          <path class="cls-1" d="M112.6,86.8h16.1v5.5c0,3-2.5,5.5-5.5,5.5h-5.1c-3,0-5.5-2.5-5.5-5.5v-5.5Z"/>
+          <path class="cls-1" d="M120.7,45.4c3.7,0,6.7,3,6.7,6.7s-3,6.7-6.7,6.7-6.7-3-6.7-6.7,3-6.7,6.7-6.7Z"/>
+          <path class="cls-1" d="M36.8,88.8h54.4"/>
+          <path class="cls-1" d="M36.8,73.9h40.6"/>
+          <path class="cls-1" d="M36.8,103.7h54.4"/>
+          <path class="cls-1" d="M111.5,21.6c-8.6,2.9-15.5,10.3-15.5,22.2,0,16,13.8,18.6,15,32.4M130.5,76.3c1.2-13.8,15-16.4,15-32.4,0-15.5-11.7-23.4-23.7-23.7"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

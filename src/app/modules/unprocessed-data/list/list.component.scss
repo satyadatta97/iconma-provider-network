@@ -1,0 +1,40 @@
+.chat{
+    white-space: nowrap; 
+  width: 234px;
+  max-width: 234px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.sc-table{
+  tr{
+    td{
+      &:last-child{
+        white-space: nowrap; 
+        width: 208px;
+        max-width: 208px; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+      }
+    }
+  }
+}
+.column {
+  flex: 1 1 20%; /* Divide the columns evenly (20% each for 5 columns) */
+ 
+}
+@media (max-width: 1320px) {
+  .column {
+      flex: 1 1 25%; /* Stack 2 columns per row on medium-sized screens */
+  }
+}
+@media (max-width: 1024px) {
+  .column {
+      flex: 1 1 50%; /* Stack 2 columns per row on medium-sized screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .column {
+      flex: 1 1 100%; /* Stack 1 column per row on small-sized screens */
+  }
+}
