@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import{  Chart, ChartType, registerables, } from "chart.js/auto";
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+Chart.register(ChartDataLabels);
 @Component({
   selector: 'app-user-engagement-metrics',
   standalone: false,
@@ -21,12 +23,12 @@ export class UserEngagementMetricsComponent {
             backgroundColor: '#bc4504',
             tension: 0.4, // Curve the line
             fill: false,
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
         
         ]
@@ -57,12 +59,12 @@ export class UserEngagementMetricsComponent {
             data: [71, 29], // 60% Chat, 40% Voice
             backgroundColor: ['#1d59a8', '#b84608'], // Custom colors
             hoverBackgroundColor: ['#1358b2', '#963c0b'],
-            // datalabels: {
-            //   // anchor: 'end',
-            //   // align: 'end',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#fff'
-            // }
+            datalabels: {
+              // anchor: 'end',
+              // align: 'end',
+              formatter: (value: number) => value.toString(),
+              color:'#fff'
+            }
           },
         
         ]
@@ -95,12 +97,12 @@ export class UserEngagementMetricsComponent {
             backgroundColor: ['#219689', ], // Custom colors
             borderColor: ['#219689', ],
             borderWidth: 1,
-            // datalabels: {
-            //   // anchor: 'end',
-            //   // align: 'end',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#fff'
-            // }
+            datalabels: {
+              // anchor: 'end',
+              // align: 'end',
+              formatter: (value: number) => value.toString(),
+              color:'#fff'
+            }
           },
           {
             label: 'Voice Users',
@@ -108,12 +110,12 @@ export class UserEngagementMetricsComponent {
             backgroundColor: [ '#af480f'], // Custom colors
             borderColor: [ '#af480f'],
             borderWidth: 1,
-            // datalabels: {
-            //   // anchor: 'end',
-            //   // align: 'end',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#fff'
-            // }
+            datalabels: {
+              // anchor: 'end',
+              // align: 'end',
+              formatter: (value: number) => value.toString(),
+              color:'#fff'
+            }
           },
         
         ]

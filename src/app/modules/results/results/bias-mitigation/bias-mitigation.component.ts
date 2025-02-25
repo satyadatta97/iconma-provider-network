@@ -20,12 +20,12 @@ export class BiasMitigationComponent {
             borderColor: '#FF6384',
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             tension: 0.4,
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
           {
             label: 'Bias Incidents Resolved',
@@ -33,12 +33,12 @@ export class BiasMitigationComponent {
             borderColor: '#36A2EB',
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
             tension: 0.4,
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
         ]
       },

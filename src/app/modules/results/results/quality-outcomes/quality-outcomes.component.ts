@@ -72,12 +72,12 @@ export class QualityOutcomesComponent {
         },
       
         plugins: {
-          // datalabels: {
-          //   // anchor: 'end',
-          //   // align: 'end',
-          //   formatter: (value: number) => value.toString(),
-          //   color:'#fff'
-          // },
+          datalabels: {
+            // anchor: 'end',
+            // align: 'end',
+            formatter: (value: number) => value.toString(),
+            color:'#fff'
+          },
           legend: {
             display: true,
             position: "bottom",
@@ -103,12 +103,12 @@ export class QualityOutcomesComponent {
             backgroundColor: '#b9481a', // Line area color
             fill: false, // Fills the area under the line
             tension: 0.4, // Smoothness of the line
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
           {
             label: 'Provider B', // Line for Provider B
@@ -118,12 +118,12 @@ export class QualityOutcomesComponent {
             backgroundColor: '#1d59a8', // Line area color
             fill: false, // Fills the area under the line
             tension: 0.4, // Smoothness of the line
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
           {
             label: 'Provider C', // Line for Provider C
@@ -133,12 +133,12 @@ export class QualityOutcomesComponent {
             backgroundColor: '#829faf', // Line area color
             fill: false, // Fills the area under the line
             tension: 0.4, // Smoothness of the line
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
           {
             label: 'Provider D', // Line for Provider D
@@ -147,12 +147,12 @@ export class QualityOutcomesComponent {
             backgroundColor: '#de7d1c', // Line area color
             fill: false, // Fills the area under the line
             tension: 0.4, // Smoothness of the line
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
         ]
       },
@@ -240,12 +240,12 @@ export class QualityOutcomesComponent {
           }
         },
         plugins: {
-          // datalabels: {
-          //   // anchor: 'end',
-          //   // align: 'end',
-          //   formatter: (value: number) => value.toString(),
-          //   color:'#fff'
-          // },
+          datalabels: {
+            // anchor: 'end',
+            // align: 'end',
+            formatter: (value: number) => value.toString(),
+            color:'#fff'
+          },
           legend: {
             display: true,
             position: "bottom",

@@ -69,12 +69,12 @@ export class ProviderNetworkEnhancementComponent {
           },
         },
         plugins: {
-          // datalabels: {
-          //   // anchor: 'end',
-          //   // align: 'end',
-          //   formatter: (value: number) => value.toString(),
-          //   color:'#fff'
-          // },
+          datalabels: {
+            // anchor: 'end',
+            // align: 'end',
+            formatter: (value: number) => value.toString(),
+            color:'#fff'
+          },
           legend: {
             display: true,
             position: "bottom",
@@ -98,12 +98,12 @@ export class ProviderNetworkEnhancementComponent {
             backgroundColor: '#1d59a8',
             tension: 0.4,
             pointBackgroundColor: '#1d59a8',
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
           {
             label: 'South',
@@ -112,12 +112,12 @@ export class ProviderNetworkEnhancementComponent {
             backgroundColor: '#2e842e',
             tension: 0.4,
             pointBackgroundColor: '#2e842e',
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
           {
             label: 'East',
@@ -126,12 +126,12 @@ export class ProviderNetworkEnhancementComponent {
             backgroundColor: '#b14a1e',
             tension: 0.4,
             pointBackgroundColor: '#b14a1e',
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
           {
             label: 'West',
@@ -140,12 +140,12 @@ export class ProviderNetworkEnhancementComponent {
             backgroundColor: '#2e8282',
             tension: 0.4,
             pointBackgroundColor: '#2e8282',
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
         ]
       },
