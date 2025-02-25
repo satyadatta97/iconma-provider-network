@@ -30,12 +30,12 @@ export class UserSatisfactionComponent {
         maintainAspectRatio: false,
         
         plugins: {
-          // datalabels: {
-          //   // anchor: 'end',
-          //   // align: 'end',
-          //   formatter: (value: number) => value.toString(),
-          //   color:'#fff'
-          // },
+          datalabels: {
+            // anchor: 'end',
+            // align: 'end',
+            formatter: (value: number) => value.toString(),
+            color:'#fff'
+          },
           legend: {
             display: true,
             position: "bottom",
@@ -84,12 +84,12 @@ export class UserSatisfactionComponent {
         },
       
         plugins: {
-          // datalabels: {
-          //   anchor: 'end',
-          //   align: 'start',
-          //   formatter: (value: number) => value.toString(),
-          //   color:'#000'
-          // },
+          datalabels: {
+            anchor: 'end',
+            align: 'start',
+            formatter: (value: number) => value.toString(),
+            color:'#000'
+          },
           legend: {
             display: true,
             position: "bottom",

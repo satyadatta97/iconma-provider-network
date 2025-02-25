@@ -30,16 +30,16 @@ export class CostSavingsNetwrokComponent {
          maintainAspectRatio: false,
          
          plugins: {
-          // datalabels: {
-          //   display: true, // To show data labels
-          //   color: '#fff',
-          //   font: {
-          //     weight: 'normal',
-          //     size: 12,
+          datalabels: {
+            display: true, // To show data labels
+            color: '#fff',
+            font: {
+              weight: 'normal',
+              size: 12,
               
-          //   },
-          //   formatter: (value: number) => value.toString() // Display the value
-          // },
+            },
+            formatter: (value: number) => value.toString() // Display the value
+          },
           legend: {
             display: true,
             position: "bottom",

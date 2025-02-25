@@ -22,12 +22,12 @@ var DetectionsCaptured = new Chart("AlertDetectionCapturedChart", {
         backgroundColor: '#1d59a8',
         tension: 0.4, // Curve the line
         fill: false,
-        // datalabels: {
-        //   anchor: 'end',
-        //   align: 'start',
-        //   formatter: (value) => value.toString(),
-        //   color: '#000'
-        // }
+        datalabels: {
+          anchor: 'end',
+          align: 'start',
+          formatter: (value) => value.toString(),
+          color: '#000'
+        }
       },
       {
         data: [30, 42, 54, 60, 63, 70], // "After" values as percentages (30% to 70%)
@@ -36,12 +36,12 @@ var DetectionsCaptured = new Chart("AlertDetectionCapturedChart", {
         backgroundColor: '#269393',
         tension: 0.4, // Curve the line
         fill: false,
-        // datalabels: {
-        //   anchor: 'end',
-        //   align: 'start',
-        //   formatter: (value) => value.toString(),
-        //   color: '#000'
-        // }
+        datalabels: {
+          anchor: 'end',
+          align: 'start',
+          formatter: (value) => value.toString(),
+          color: '#000'
+        }
       }
     ]
   },
@@ -126,12 +126,12 @@ var DetectionsCaptured = new Chart("AlertDetectionCapturedChart", {
           }
         },
         plugins: {
-          // datalabels: {
-          //   // anchor: 'end',
-          //   // align: 'end',
-          //   formatter: (value: number) => value.toString(),
-          //   color:'#fff'
-          // },
+          datalabels: {
+            // anchor: 'end',
+            // align: 'end',
+            formatter: (value: number) => value.toString(),
+            color:'#fff'
+          },
           legend: {
             display: true,
             position: "bottom",
@@ -187,12 +187,12 @@ var DetectionsCaptured = new Chart("AlertDetectionCapturedChart", {
           }
         },
         plugins: {
-          // datalabels: {
-          //   // anchor: 'end',
-          //   // align: 'end',
-          //   formatter: (value: number) => value.toString(),
-          //   color:'#fff'
-          // },
+          datalabels: {
+            // anchor: 'end',
+            // align: 'end',
+            formatter: (value: number) => value.toString(),
+            color:'#fff'
+          },
           legend: {
             display: true,
             position: "bottom",
@@ -249,12 +249,12 @@ var DetectionsCaptured = new Chart("AlertDetectionCapturedChart", {
           }
         },
         plugins: {
-          // datalabels: {
-          //   // anchor: 'end',
-          //   // align: 'end',
-          //   formatter: (value: number) => value.toString(),
-          //   color:'#fff'
-          // },
+          datalabels: {
+            // anchor: 'end',
+            // align: 'end',
+            formatter: (value: number) => value.toString(),
+            color:'#fff'
+          },
           legend: {
             display: true,
             position: "bottom",

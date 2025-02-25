@@ -22,12 +22,12 @@ export class CostNetworkcareComponent {
             fill: false, // Fill the area under the line
             yAxisID: 'y1', // This dataset uses the left Y-axis (Total Cost)
             tension:0.3,
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
           {
             label: 'In-Network Utilization (%)', // Line for In-Network Utilization
@@ -37,12 +37,12 @@ export class CostNetworkcareComponent {
             fill: false, // Fill the area under the line
             yAxisID: 'y2', // This dataset uses the right Y-axis (In-Network Utilization)
             tension:0.3,
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
          
         ]
@@ -106,12 +106,12 @@ export class CostNetworkcareComponent {
             backgroundColor: 'rgba(0, 123, 255, 0.2)',
             fill: true,  // Filling area under the line
             tension: 0.3,  // Smoothness of the line
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
           {
             label: 'Out-network Expenses',
@@ -120,12 +120,12 @@ export class CostNetworkcareComponent {
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             fill: true,
             tension: 0.3,
-            // datalabels: {
-            //   anchor: 'end',
-            //   align: 'start',
-            //   formatter: (value: number) => value.toString(),
-            //   color:'#000'
-            // }
+            datalabels: {
+              anchor: 'end',
+              align: 'start',
+              formatter: (value: number) => value.toString(),
+              color:'#000'
+            }
           },
          
         ]
@@ -228,12 +228,12 @@ export class CostNetworkcareComponent {
         },
       
         plugins: {
-          // datalabels: {
-          //   // anchor: 'end',
-          //   // align: 'end',
-          //   formatter: (value: number) => value.toString(),
-          //   color:'#fff'
-          // },
+          datalabels: {
+            // anchor: 'end',
+            // align: 'end',
+            formatter: (value: number) => value.toString(),
+            color:'#fff'
+          },
           legend: {
             display: true,
             position: "bottom",

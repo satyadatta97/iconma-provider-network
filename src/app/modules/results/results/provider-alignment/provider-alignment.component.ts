@@ -137,12 +137,12 @@ var qualityProgramm = new Chart("QPPTCRChart", {
         position: "bottom",
         align: "center",
       },
-      // datalabels: {
-      //   // anchor: 'end',
-      //   // align: 'end',
-      //   formatter: (value: number) => value.toString(),
-      //   color:'#fff'
-      // },
+      datalabels: {
+        // anchor: 'end',
+        // align: 'end',
+        formatter: (value: number) => value.toString(),
+        color:'#fff'
+      },
     },
   },
 });
