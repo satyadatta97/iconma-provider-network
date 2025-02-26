@@ -2,6 +2,25 @@
     <div class="component-heading border-bottom ml-3 pb-2 mb-3">
         <h5>Dashboard</h5>
     </div>
+    <div>
+        <div class="box-container mb-5 mt-5">
+            <ng-container *ngFor="let box of boxes; let i = index" >
+                <div class="box" (click) = "selectBox($event,i,box)"
+                  [ngClass]="{'running': currentIndex === i, 'completed': i < currentIndex}" >
+                  <!-- <button type = "button" (click) = "selectBox(i,box)"></button> -->
+                   <img src="{{box.imageUrl}}" height="104">
+                  <span class="box-text" >{{ box.text }}</span>
+                </div>
+               
+                <!-- Arrow Between Boxes -->
+                <span *ngIf="i < boxes.length - 1" class="arrow">
+                    <!-- ⇢ -->
+                    <img src="../../../../assets/img/arrow.svg" width="70" height="22">
+                </span>
+              </ng-container>
+          
+             </div>
+    </div>
     <!-- User Engagement Metrics Starts-->
     <div class="each-segment">
         <h4 class="mb-3 ml-3">User Engagement Metrics</h4>

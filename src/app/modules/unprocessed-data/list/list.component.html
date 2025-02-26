@@ -3,6 +3,23 @@
         <h5>Unprocessed Data</h5>
     </div>
     <div class="component-body">
+      <div class="box-container mb-5 mt-5">
+        <ng-container *ngFor="let box of boxes; let i = index" >
+            <div class="box" (click) = "selectBox($event,i,box)"
+              [ngClass]="{'running': currentIndex === i, 'completed': i < currentIndex}" >
+              <!-- <button type = "button" (click) = "selectBox(i,box)"></button> -->
+               <img src="{{box.imageUrl}}" height="104">
+              <span class="box-text" >{{ box.text }}</span>
+            </div>
+           
+            <!-- Arrow Between Boxes -->
+            <span *ngIf="i < boxes.length - 1" class="arrow">
+              <!-- ⇢ -->
+              <img src="../../../../assets/img/arrow.svg" width="70" height="22">
+            </span>
+          </ng-container>
+      
+         </div>
         <div class="active-vehicals-content mt-2 role-description p-2">
             <div class="tab-slider--nav">
                 <!-- "sc-tabs" this class use when tabs need equal width-->
@@ -21,7 +38,7 @@
                 <div class="each-segment mt-4">
                   <h4 class="ml-3">Summary of the Raw Data</h4>
                   <div class="row statistics mt-4"> 
-                      <div class="column">
+                      <div class="col-lg-2 col-md-4">
                           <div class="theme-card dashboard-card-minheight">
                               <div class="d-flex align-items-center">
                                   <div class="theme-icon mr-3">
@@ -32,7 +49,7 @@
                               <h2>27291</h2>
                           </div>
                       </div>
-                      <div class="column">
+                      <div class="col-lg-2 col-md-4">
                           <div class="theme-card dashboard-card-minheight">
                               <div class="d-flex align-items-center">
                                   <div class="theme-icon mr-3">
@@ -43,7 +60,7 @@
                               <h2>23</h2>
                           </div>
                       </div>
-                      <div class="column">
+                      <div class="col-lg-2 col-md-4">
                           <div class="theme-card dashboard-card-minheight">
                               <div class="d-flex align-items-center">
                                   <div class="theme-icon mr-3">
@@ -54,7 +71,7 @@
                               <h2>141</h2>
                           </div>
                       </div>
-                      <div class="column">
+                      <div class="col-lg-2 col-md-4">
                           <div class="theme-card dashboard-card-minheight">
                               <div class="d-flex align-items-center">
                                   <div class="theme-icon mr-3">
@@ -65,7 +82,7 @@
                               <h2>3922</h2>
                           </div>
                       </div>
-                      <div class="column">
+                      <div class="col-lg-2 col-md-4">
                           <div class="theme-card dashboard-card-minheight">
                               <div class="d-flex align-items-center">
                                   <div class="theme-icon mr-3">
@@ -76,6 +93,17 @@
                               <h2>2279</h2>
                           </div>
                       </div>
+                      <div class="col-lg-2 col-md-4">
+                        <div class="theme-card dashboard-card-minheight">
+                            <div class="d-flex align-items-center">
+                                <div class="theme-icon mr-3">
+                                    <img src="../assets/img/increase.svg" height="28">
+                                </div>
+                                <p>Total No of Providers</p>
+                            </div>
+                            <h2>6</h2>
+                        </div>
+                    </div>
                   </div>
                  </div>
                  <div class="each-segment mt-4">

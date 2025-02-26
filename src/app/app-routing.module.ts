@@ -5,6 +5,11 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
+      import('./modules/main/main.module').then((m) => m.MainModule),
+  },
+  {
+    path: 'unprocessed-data',
+    loadChildren: () =>
       import('./modules/unprocessed-data/unprocessed-data.module').then((m) => m.UnprocessedDataModule),
   },
   {

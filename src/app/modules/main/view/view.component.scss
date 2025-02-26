@@ -1,26 +1,4 @@
-.sc-table{
-    tr{
-      td{
-        &:nth-last-child(2) {
-          white-space: nowrap; 
-          width: 208px;
-          max-width: 208px; 
-          overflow: hidden;
-          text-overflow: ellipsis; 
-        }
-        &:nth-last-child(3) {
-          white-space: nowrap; 
-          width: 208px;
-          max-width: 208px; 
-          overflow: hidden;
-          text-overflow: ellipsis; 
-        }
-      }
-    }
-  }
 
-
-  
 .container {
   text-align: center;
   margin-top: 20px;
@@ -79,10 +57,16 @@ button {
     bottom: -42px;
     color: #000;
 }
+
+.start-button{
+  padding: 0.5rem 7.5rem !important;
+}
 .box{
-  cursor: pointer;
-  &:not(:first-child):not(:last-child){
-    background-color: rgba(40, 167, 69, 0.8509803922) !important;
-    border-color: #28a745 !important;
+  &:last-child{
+    height: 104px;
+    width: 104px;
+    img{
+      height: 64px;
+    }
   }
 }
