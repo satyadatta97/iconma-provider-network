@@ -12,32 +12,32 @@ export class ProviderNetworkEnhancementComponent {
     var highperformance = new Chart("HighPerformancePChart", {
       type: 'bar', // Use line chart for area effect
       data: {
-        labels: ['High Performers (%)',], // Regions
+        labels: ['Region',], // Regions
         datasets: [
           {
             label: 'North',
-            data: [65, ], // High Performer Percentages
+            data: [0.85 ], // High Performer Percentages
             backgroundColor: ['#1d59a8', ],
             borderColor: ['#1d59a8', ],
             borderWidth: 1,
           },
           {
             label: 'South',
-            data: [ 50,], // High Performer Percentages
+            data: [ 0.79], // High Performer Percentages
             backgroundColor: [ '#2e842e', ],
             borderColor: [ '#2e842e', ],
             borderWidth: 1,
           },
           {
             label: 'East',
-            data: [ 75,], // High Performer Percentages
+            data: [ 0.82], // High Performer Percentages
             backgroundColor: [ '#b14a1e', ],
             borderColor: [ '#b14a1e', ],
             borderWidth: 1,
           },
           {
             label: 'West',
-            data: [ 60], // High Performer Percentages
+            data: [ 0.67], // High Performer Percentages
             backgroundColor: [ '#2e8282'],
             borderColor: [ '#2e8282'],
             borderWidth: 1,
@@ -53,7 +53,7 @@ export class ProviderNetworkEnhancementComponent {
           x: {
             title: {
               display: true,
-             // text: 'Regions',
+             // text: 'Avg Performance %',
             },
           },
           y: {
@@ -64,7 +64,7 @@ export class ProviderNetworkEnhancementComponent {
             },
             ticks: {
               callback: (value) => `${value}%`,
-              stepSize: 10,
+              stepSize: 0.1,
             },
           },
         },
@@ -89,11 +89,11 @@ export class ProviderNetworkEnhancementComponent {
     var avgtime = new Chart("AvgWaitTimeChart", {
       type: 'line' as ChartType, // Use line chart for area effect
       data: {
-        labels: ['June', 'July', 'August', 'September', 'October', 'November'], // Months
+        labels: ['June', 'July', 'August', 'September', 'October', 'November','December'], // Months
         datasets: [
           {
             label: 'North',
-            data: [8, 6, 5, 5, 6, 2], // Average Wait Time for North
+            data: [10, 9, 10, 8, 7, 5,6], // Average Wait Time for North
             borderColor: '#1d59a8',
             backgroundColor: '#1d59a8',
             tension: 0.4,
@@ -107,7 +107,7 @@ export class ProviderNetworkEnhancementComponent {
           },
           {
             label: 'South',
-            data: [10, 9, 8, 7, 6, 1], // Average Wait Time for South
+            data: [8, 7, 8, 7, 6, 4,7], // Average Wait Time for South
             borderColor: '#2e842e',
             backgroundColor: '#2e842e',
             tension: 0.4,
@@ -121,7 +121,7 @@ export class ProviderNetworkEnhancementComponent {
           },
           {
             label: 'East',
-            data: [6, 5, 5, 4, 5, 2], // Average Wait Time for East
+            data: [8, 6, 8, 5, 6, 3,8], // Average Wait Time for East
             borderColor: '#b14a1e',
             backgroundColor: '#b14a1e',
             tension: 0.4,
@@ -135,7 +135,7 @@ export class ProviderNetworkEnhancementComponent {
           },
           {
             label: 'West',
-            data: [8, 7, 7, 6, 7, 2], // Average Wait Time for West
+            data: [6, 5, 6, 5, 5, 6,5], // Average Wait Time for West
             borderColor: '#2e8282',
             backgroundColor: '#2e8282',
             tension: 0.4,

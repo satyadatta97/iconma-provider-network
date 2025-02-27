@@ -21,77 +21,138 @@
           
              </div>
     </div>
-    <!-- User Engagement Metrics Starts-->
-    <div class="each-segment">
-        <h4 class="mb-3 ml-3">User Engagement Metrics</h4>
-        <app-user-engagement-metrics></app-user-engagement-metrics>
+
+    <div class="active-vehicals-content role-description p-2">
+        <div class="tab-slider--nav mt-5">
+         
+            <ul class="nav nav-tabs sc-tabs">
+                <li class="nav-item each-tab-slider active" [class.active]="viewMode == 'UEM'"
+                    rel="UEM" (click)="viewMode ='UEM'">User Engagement Metrics</li>
+                <li class="nav-item each-tab-slider active" [class.active]="viewMode == 'HOT'"
+                    rel="HOT" (click)="viewMode ='HOT'">Health Outcomes</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'BMM'" rel="BMM"
+                    (click)="viewMode ='BMM'">Bias Mitigation Metrics</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'OPE'" rel="OPE"
+                    (click)="viewMode ='OPE'">Operational Efficiency</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'APA'" rel="APA"
+                    (click)="viewMode ='APA'">AI Prediction Accuracy</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'URST'" rel="URST"
+                    (click)="viewMode ='URST'">User Satisfaction</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'QOT'" rel="QOT"
+                    (click)="viewMode ='QOT'">Quality Outcomes</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'PVAL'" rel="PVAL"
+                    (click)="viewMode ='PVAL'">Provider Alignment</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'PNE'" rel="PNE"
+                    (click)="viewMode ='PNE'">Provider Network Enhancement</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'CINC'" rel="CINC"
+                    (click)="viewMode ='CINC'">Cost and In-Network Care</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'RBCM'" rel="RBCM"
+                    (click)="viewMode ='RBCM'">Risk-Based Contract Monitoring</li>
+                <li class="nav-item each-tab-slider" [class.active]="viewMode == 'NHPS'" rel="NHPS"
+                    (click)="viewMode ='NHPS'">New Health Plan Suggestions</li>
+            </ul>
+        </div>
+        <div class="" [ngSwitch]="viewMode">
+            <div id="UEM" class="each-tab-slider-content mt-3" *ngSwitchCase="'UEM'">
+                <div class="each-segment">
+                    <h4 class="mb-3 ml-3">User Engagement Metrics</h4>
+                    <app-user-engagement-metrics></app-user-engagement-metrics>
+                </div>
+            </div>
+            <div id="HOT" class="each-tab-slider-content mt-3" *ngSwitchCase="'HOT'">
+                <div class="each-segment">
+                    <h4 class="mb-3 ml-3">Health Outcomes</h4>
+                    <app-health-outcomes></app-health-outcomes>
+                </div>
+            </div>
+            <div id="BMM" class="each-tab-slider-content mt-3" *ngSwitchCase="'BMM'">
+                 <!-- Bias Mitigation Metrics Starts-->
+                    <div class="each-segment">
+                        <h4 class="mb-3 ml-3">Bias Mitigation Metrics</h4>
+                        <app-bias-mitigation></app-bias-mitigation>
+                    </div>
+                <!--Bias Mitigation Metrics Ends -->
+            </div>
+            <div id="OPE" class="each-tab-slider-content mt-3" *ngSwitchCase="'OPE'">
+                    <!-- Operational Efficiency Starts-->
+                    <div class="each-segment">
+                        <h4 class="mb-3 ml-3">Operational Efficiency</h4>
+                        <app-operational-efficiency></app-operational-efficiency>
+                    </div>
+                    <!--Operational Efficiency Ends -->
+           </div>
+           <div id="APA" class="each-tab-slider-content mt-3" *ngSwitchCase="'APA'">
+                    <!-- AI Prediction Accuracy Starts-->
+                    <div class="each-segment">
+                        <h4 class="mb-3 ml-3">AI Prediction Accuracy</h4>
+                        <app-ai-prediction-accuracy></app-ai-prediction-accuracy>
+                    </div>
+                    <!--AI Prediction Accuracy Ends -->
+            </div>
+            <div id="URST" class="each-tab-slider-content mt-3" *ngSwitchCase="'URST'">
+                    <!-- User Satisfaction Starts-->
+                    <div class="each-segment">
+                        <h4 class="mb-3 ml-3">User Satisfaction</h4>
+                        <app-user-satisfaction></app-user-satisfaction>
+                    </div>
+                    <!--User Satisfaction Ends -->
+            </div>
+            <div id="QOT" class="each-tab-slider-content mt-3" *ngSwitchCase="'QOT'">
+                    <!-- Quality Outcomes Starts-->
+                    <div class="each-segment">
+                        <h4 class="mb-3 ml-3">Quality Outcomes</h4>
+                        <app-quality-outcomes></app-quality-outcomes>
+                    </div>
+                    <!--Quality Outcomes Ends -->
+            </div>
+            <div id="PVAL" class="each-tab-slider-content mt-3" *ngSwitchCase="'PVAL'">
+                    <!-- Provider Alignment Starts-->
+                    <div class="each-segment">
+                        <h4 class="mb-3 ml-3">Provider Alignment</h4>
+                        <app-provider-alignment></app-provider-alignment>
+                    </div>
+                    <!--Provider Alignment Ends -->
+            </div>
+            <div id="PNE" class="each-tab-slider-content mt-3" *ngSwitchCase="'PNE'">
+                    <!-- Provider Network Enhancement Starts-->
+                    <div class="each-segment">
+                        <h4 class="mb-3 ml-3">Provider Network Enhancement</h4>
+                        <app-provider-network-enhancement></app-provider-network-enhancement>
+                    </div>
+                    <!--Provider Network Enhancement Ends -->
+            </div>
+            <div id="CINC" class="each-tab-slider-content mt-3" *ngSwitchCase="'CINC'">
+                    <!-- Cost and In-Network Care Starts-->
+                    <div class="each-segment">
+                        <h4 class="mb-3 ml-3">Cost and In-Network Care</h4>
+                        <app-cost-networkcare></app-cost-networkcare>
+                    </div>
+                    <!--Cost and In-Network Care Ends -->
+            </div>
+            <div id="RBCM" class="each-tab-slider-content mt-3" *ngSwitchCase="'RBCM'">
+                <!-- Risk-Based Contract Monitoring Starts-->
+                <div class="each-segment">
+                    <h4 class="mb-3 ml-3">Risk-Based Contract Monitoring</h4>
+                    <app-risk-based-contract-monitoring></app-risk-based-contract-monitoring>
+                </div>
+                <!--Risk-Based Contract Monitoring Ends -->
+           </div>
+           <div id="NHPS" class="each-tab-slider-content mt-3" *ngSwitchCase="'NHPS'">
+                <!-- New Health Plan Suggestions Starts-->
+                <div class="each-segment">
+                    <h4 class="mb-3 ml-3">New Health Plan Suggestions</h4>
+                    <app-new-healthplan-suggestions></app-new-healthplan-suggestions>
+                </div>
+                <!--New Health Plan Suggestions Ends -->
+           </div>
+        </div>
     </div>
-    <!--User Engagement Metrics Ends -->
-    <!-- Health Outcomes Starts-->
-     <div class="each-segment">
-        <h4 class="mb-3 ml-3">Health Outcomes</h4>
-        <app-health-outcomes></app-health-outcomes>
-    </div>
-    <!--Health Outcomes Ends -->
-    <!-- Bias Mitigation Metrics Starts-->
-     <div class="each-segment">
-        <h4 class="mb-3 ml-3">Bias Mitigation Metrics</h4>
-        <app-bias-mitigation></app-bias-mitigation>
-    </div>
-    <!--Bias Mitigation Metrics Ends -->
-    <!-- Operational Efficiency Starts-->
-     <div class="each-segment">
-        <h4 class="mb-3 ml-3">Operational Efficiency</h4>
-        <app-operational-efficiency></app-operational-efficiency>
-    </div>
-    <!--Operational Efficiency Ends -->
+
     
-    <!-- AI Prediction Accuracy Starts-->
-    <div class="each-segment">
-        <h4 class="mb-3 ml-3">AI Prediction Accuracy</h4>
-        <app-ai-prediction-accuracy></app-ai-prediction-accuracy>
-    </div>
-    <!--AI Prediction Accuracy Ends -->
-    <!-- User Satisfaction Starts-->
-     <div class="each-segment">
-        <h4 class="mb-3 ml-3">User Satisfaction</h4>
-        <app-user-satisfaction></app-user-satisfaction>
-    </div>
-    <!--User Satisfaction Ends -->
-    <!-- Quality Outcomes Starts-->
-    <div class="each-segment">
-        <h4 class="mb-3 ml-3">Quality Outcomes</h4>
-        <app-quality-outcomes></app-quality-outcomes>
-    </div>
-    <!--Quality Outcomes Ends -->
-    <!-- Provider Alignment Starts-->
-     <div class="each-segment">
-        <h4 class="mb-3 ml-3">Provider Alignment</h4>
-        <app-provider-alignment></app-provider-alignment>
-    </div>
-    <!--Provider Alignment Ends -->
-     <!-- Provider Network Enhancement Starts-->
-     <div class="each-segment">
-        <h4 class="mb-3 ml-3">Provider Network Enhancement</h4>
-        <app-provider-network-enhancement></app-provider-network-enhancement>
-    </div>
-    <!--Provider Network Enhancement Ends -->
-    <!-- Cost and In-Network Care Starts-->
-     <div class="each-segment">
-        <h4 class="mb-3 ml-3">Cost and In-Network Care</h4>
-        <app-cost-networkcare></app-cost-networkcare>
-    </div>
-    <!--Cost and In-Network Care Ends -->
-    <!-- Risk-Based Contract Monitoring Starts-->
-     <!-- <div class="each-segment">
-        <h4 class="mb-3 ml-3">Risk-Based Contract Monitoring</h4>
-        <app-risk-based-contract-monitoring></app-risk-based-contract-monitoring>
-    </div> -->
-    <!--Risk-Based Contract Monitoring Ends -->
-    <!-- New Health Plan Suggestions Starts-->
-     <div class="each-segment">
-        <h4 class="mb-3 ml-3">New Health Plan Suggestions</h4>
-        <app-new-healthplan-suggestions></app-new-healthplan-suggestions>
-    </div>
-    <!--New Health Plan Suggestions Ends -->
+    
+    
+ 
+  
+   
+      
  </div>

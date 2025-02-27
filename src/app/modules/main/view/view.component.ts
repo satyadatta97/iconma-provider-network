@@ -13,9 +13,11 @@ export class ViewComponent implements OnInit{
   ngOnInit() {}
   boxes = [
     { text: "Fetching Data", status: "pending" ,imageUrl : '../assets/img/Fetching_data.svg'},
+    { text: "Masking Data", status: "pending" ,imageUrl : '../assets/img/masking-data.svg'},
     { text: "Processing Data", status: "pending",imageUrl : '../assets/img/Processing_data.svg' },
-    { text: "Exploratory Data Analysis", status: "pending",imageUrl : '../assets/img/exploratory-analysis.svg' },
     { text: "Clean Data", status: "pending",imageUrl : '../assets/img/data-cleaning.svg' },
+    { text: "Exploratory Data Analysis", status: "pending",imageUrl : '../assets/img/exploratory-analysis.svg' },
+    { text: "Future Engineering", status: "pending",imageUrl : '../assets/img/future-engineering.svg' },
     { text: "Models & Algorithms", status: "pending",imageUrl : '../assets/img/Running_algorithms.svg' },
     { text: "Generating Dashboard", status: "pending",imageUrl : '../assets/img/Generate_dashboard.svg' },
     { text: "Done", status: "pending",imageUrl : '../assets/img/Done.svg' },

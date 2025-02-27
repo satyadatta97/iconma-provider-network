@@ -338,7 +338,7 @@ body,html,h1,h2,h3,h4,h5,h6,p,ul,li,a,span,ol{
 
 ::-webkit-scrollbar {
     width: 6px;
-    height: 6px;
+    height: 4px;
   }
   
   /* Track */
@@ -392,12 +392,11 @@ body,html,h1,h2,h3,h4,h5,h6,p,ul,li,a,span,ol{
       color: var(--color-primary);
       border-bottom: 3px solid var(--color-primary);
       position: relative;
-  
     }
     .each-tab-slider {
       cursor: pointer;
       // margin: 0px 16px;
-      padding: 6px 8px;
+      padding: 6px 6px;
       white-space: pre;
       position: relative;
       font-size: var(--application-font-size) !important;
@@ -426,4 +425,12 @@ th{
 }
 .text-right{
     text-align: right !important;
+}
+.sc-tabs{
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    .each-tab-slider {
+        font-size: 14px !important;
+        font-weight: 500;
+    }
 }

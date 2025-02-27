@@ -14,13 +14,13 @@ export class UserEngagementMetricsComponent {
     var CreditRisk = new Chart("ActiveUsersChart", {
       type: 'line' as ChartType, // Use line chart for area effect
       data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        labels: ['January', 'February', 'March', 'April','May','June','July','Aug','Sep','Oct','Nov','Dec'], // X-Axis Labels
         datasets: [
           {
-            data: [1357, 1418, 1568, 1657, 1745, 1967],
+            data: [1256, 1418, 1600, 1807, 2040, 2303,2280,2574,2650,2991,2900,3500],
             label: 'Total Active Users',
-            borderColor: '#bc4504',
-            backgroundColor: '#bc4504',
+            borderColor: 'green',
+            backgroundColor: 'green',
             tension: 0.4, // Curve the line
             fill: false,
             datalabels: {
@@ -56,7 +56,7 @@ export class UserEngagementMetricsComponent {
         labels: ['Chat Interaction', 'Voice Interaction'],
         datasets: [
           {
-            data: [71, 29], // 60% Chat, 40% Voice
+            data: [85556, 192223], // 60% Chat, 40% Voice
             backgroundColor: ['#1d59a8', '#b84608'], // Custom colors
             hoverBackgroundColor: ['#1358b2', '#963c0b'],
             datalabels: {
@@ -93,7 +93,7 @@ export class UserEngagementMetricsComponent {
         datasets: [
           {
             label: 'Chat Users',
-            data: [7], // 4 minutes for Chat, 6 minutes for Voice
+            data: [12], // 4 minutes for Chat, 6 minutes for Voice
             backgroundColor: ['#219689', ], // Custom colors
             borderColor: ['#219689', ],
             borderWidth: 1,
@@ -106,7 +106,7 @@ export class UserEngagementMetricsComponent {
           },
           {
             label: 'Voice Users',
-            data: [ 3], // 4 minutes for Chat, 6 minutes for Voice
+            data: [ 7.5], // 4 minutes for Chat, 6 minutes for Voice
             backgroundColor: [ '#af480f'], // Custom colors
             borderColor: [ '#af480f'],
             borderWidth: 1,

@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
   styleUrl: './results.component.scss',
 })
 export class ResultsComponent implements OnInit{
+  name = '!!!';
+  viewMode = 'UEM';
   constructor(private router: Router) { }
     ngOnInit() {}
   boxes = [

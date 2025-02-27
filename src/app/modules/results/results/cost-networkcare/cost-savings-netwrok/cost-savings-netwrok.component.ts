@@ -15,9 +15,9 @@ export class CostSavingsNetwrokComponent {
         labels: ['In-Network Utilization ($)', 'Care Coordination ($)', 'Other Initiatives ($)'], // Slices representing initiatives
         datasets: [
           {
-            data: [50000, 30000, 20000], // Cost savings from different initiatives
-            backgroundColor: ['rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'], // Colors for each slice
-            borderColor: ['rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'], // Border colors for each slice
+            data: [4870, 3245, 2800], // Cost savings from different initiatives
+            backgroundColor: ['#215d7f', '#e07133', '#1f6b27'], // Colors for each slice
+            borderColor: ['#215d7f', '#e07133', '#1f6b27'], // Border colors for each slice
             borderWidth: 1
           }
       ]

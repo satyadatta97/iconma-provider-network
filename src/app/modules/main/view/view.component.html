@@ -2,17 +2,19 @@
  <div class="container-fluid mt-4">
     <div class="box-container">
         <ng-container *ngFor="let box of boxes; let i = index" >
-            <div class="box" (click) = "selectBox($event,i,box)"
+              <div>
+                <div class="box" (click) = "selectBox($event,i,box)"
               [ngClass]="{'running': currentIndex === i, 'completed': i < currentIndex}" >
               <!-- <button type = "button" (click) = "selectBox(i,box)"></button> -->
-               <img src="{{box.imageUrl}}" height="104">
-              <span class="box-text" >{{ box.text }}</span>
+               <img src="{{box.imageUrl}}" height="84">
+             
             </div>
-           
+            <span class="box-text" >{{ box.text }}</span>
+              </div>
             <!-- Arrow Between Boxes -->
             <span *ngIf="i < boxes.length - 1" class="arrow">
               <!-- ⇢ -->
-               <img src="../../../../assets/img/arrow.svg" width="70" height="22">
+               <img src="../../../../assets/img/arrow.svg" width="70" height="24">
             </span>
           </ng-container>
       

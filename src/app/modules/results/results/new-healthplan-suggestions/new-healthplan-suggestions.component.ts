@@ -17,28 +17,28 @@ export class NewHealthplanSuggestionsComponent {
         datasets: [
           {
             label: 'Millennials',
-            data: [25,], // Enrollment percentages
+            data: [24,], // Enrollment percentages
             backgroundColor: ['#2b57a6',],
             borderColor: ['#2b57a6',],
             borderWidth: 1,
           },
           {
             label: 'Seniors',
-            data: [ 20], // Enrollment percentages
+            data: [ 27], // Enrollment percentages
             backgroundColor: [ '#278327', ],
             borderColor: ['#278327', ],
             borderWidth: 1,
           },
           {
             label: 'Families',
-            data: [40,], // Enrollment percentages
+            data: [42,], // Enrollment percentages
             backgroundColor: ['#ad4b20',],
             borderColor: [ '#ad4b20',],
             borderWidth: 1,
           },
           {
             label:  'Self-Employed',
-            data: [15], // Enrollment percentages
+            data: [18.6], // Enrollment percentages
             backgroundColor: [ '#378282'],
             borderColor: [ '#378282'],
             borderWidth: 1,
@@ -98,28 +98,28 @@ export class NewHealthplanSuggestionsComponent {
         datasets: [
           {
             label:  'Enhanced Digital Access Plan',
-            data: [5000], // Predicted Enrollment Data
+            data: [4856], // Predicted Enrollment Data
             backgroundColor: ['#42a5f5',],
             borderColor: ['#42a5f5',],
             borderWidth: 1,
           },
           {
             label:  'Comprehensive Care Plan',
-            data: [4000], // Predicted Enrollment Data
+            data: [3966], // Predicted Enrollment Data
             backgroundColor: [ '#278327', ],
             borderColor: [ '#278327',],
             borderWidth: 1,
           },
           {
             label:  'Family Wellness Plan',
-            data: [ 6000], // Predicted Enrollment Data
+            data: [ 7244], // Predicted Enrollment Data
             backgroundColor: [ '#ffa726',],
             borderColor: [ '#ffa726', ],
             borderWidth: 1,
           },
           {
             label: 'Flexible Coverage Plan',
-            data: [ 3000], // Predicted Enrollment Data
+            data: [ 2978], // Predicted Enrollment Data
             backgroundColor: [ '#1d59a8'],
             borderColor: [ '#1d59a8'],
             borderWidth: 1,

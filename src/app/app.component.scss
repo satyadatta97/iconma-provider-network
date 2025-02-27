@@ -15,10 +15,13 @@
   background: #005baa;
   z-index: 100;
   transition: all 0.5s ease;
-  border-right: 1px dashed #bcc3d6 !important;
+  //border-right: 1px dashed #bcc3d6 !important;
 }
+// .sidebar.close{
+//   width: 64px;
+// }
 .sidebar.close{
-  width: 64px;
+  width: 0px;
 }
 .sidebar .logo-details{
   height: 60px;
@@ -227,9 +230,13 @@
   width: calc(100% - 286px);
   transition: all 0.5s ease;
 }
+// .sidebar.close ~ .home-section{
+//   left: 64px;
+//   width: calc(100% - 64px);
+// }
 .sidebar.close ~ .home-section{
-  left: 64px;
-  width: calc(100% - 64px);
+  left: 0px;
+  width: calc(100% - 0px);
 }
 // .home-section .home-content{
 //   // height: 60px;
@@ -358,4 +365,8 @@
 /* Optional: Change color of the arrow when active */
 .active .arrow {
   transform: rotate(180deg);  /* Rotate the arrow when the item is active */
+}
+.heading{
+  color: #005baa;
+  font-weight: 600;
 }

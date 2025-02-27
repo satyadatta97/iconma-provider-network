@@ -12,11 +12,11 @@ export class CostNetworkcareComponent {
     var network = new Chart("networkUtilizationChart", {
       type: 'line' as ChartType, // Use line chart for area effect
       data: {
-        labels: ['January', 'February', 'March', 'April'], // X-Axis: Months
+        labels: ['January', 'February', 'March', 'April','May','June','July','Aug','Sep','Oct','Nov','Dec'], // X-Axis Labels
         datasets: [
           {
-            label: 'Total Cost ($)', // Line for Total Cost
-            data: [1200000, 1178530, 1150000, 1130640], // Total Cost data
+            label: 'Avg Total Cost ($)', // Line for Total Cost
+            data: [1279260, 1282685, 1384007, 1173258,1371126,1408557,1184638,1491174,1119104,1198420,1146791,1239584], // Total Cost data
             borderColor: 'rgba(75, 192, 192, 1)', // Line color
             backgroundColor: 'rgba(75, 192, 192, 1)', // Line fill color
             fill: false, // Fill the area under the line
@@ -30,8 +30,8 @@ export class CostNetworkcareComponent {
             }
           },
           {
-            label: 'In-Network Utilization (%)', // Line for In-Network Utilization
-            data: [80, 82, 85, 87], // In-Network Utilization data
+            label: 'In Network Utilization (%)', // Line for In-Network Utilization
+            data: [0.70,0.69,0.65,0.76,0.65,0.64,0.74,0.62,0.81,0.74,0.78,0.72], // In-Network Utilization data
             borderColor: 'rgba(255, 159, 64, 1)', // Line color
             backgroundColor: 'rgba(255, 159, 64, 1)', // Line fill color
             fill: false, // Fill the area under the line
@@ -97,14 +97,14 @@ export class CostNetworkcareComponent {
     var expenses = new Chart("expenseChart", {
       type: 'line' as ChartType, // Use line chart for area effect
       data: {
-        labels: ['January', 'February', 'March', 'April'], // X-Axis: Months
+        labels: ['Q1', 'Q2', 'Q3', 'Q4'], // X-Axis: Months
         datasets: [
           {
             label: 'In-network Expenses',
-            data: [216000, 172500, 236000, 146900],  // In-network data
+            data: [216000, 172500, 246000, 146080],  // In-network data
             borderColor: 'rgba(0, 123, 255, 1)',
             backgroundColor: 'rgba(0, 123, 255, 0.2)',
-            fill: true,  // Filling area under the line
+            fill: false,  // Filling area under the line
             tension: 0.3,  // Smoothness of the line
             datalabels: {
               anchor: 'end',
@@ -115,10 +115,10 @@ export class CostNetworkcareComponent {
           },
           {
             label: 'Out-network Expenses',
-            data: [50000, 60000, 45000, 65000],  // Out-network data
+            data: [52000, 65000, 48000, 60000],  // Out-network data
             borderColor: 'rgba(255, 99, 132, 1)',
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            fill: true,
+            fill: false,
             tension: 0.3,
             datalabels: {
               anchor: 'end',
@@ -169,81 +169,55 @@ export class CostNetworkcareComponent {
 
     var ctx = document.getElementById("pmpmChart");
     var PMPMcomparison = new Chart("pmpmChart", {
-      type: 'bar' as ChartType, // Use line chart for area effect
+      type: 'line' as ChartType, // ✅ Line Chart
       data: {
-        labels: ['PMPM Cost ($)',], // X-Axis: Months
+        labels: ['January', 'February', 'March', 'April','May','June','July','Aug','Sep','Oct','Nov','Dec'], // X-Axis Labels
         datasets: [
           {
-            label: 'January', // Label for the dataset
-            data: [320,], // PMPM Cost data for each month
-            backgroundColor: '#228282', // Bar color (light teal)
-            borderColor: 'rgba(75, 192, 192, 1)', // Border color of bars
-            borderWidth: 1 // Border width
-          },
-          {
-            label: 'February', // Label for the dataset
-            data: [ 310,], // PMPM Cost data for each month
-            backgroundColor: '#1d59a8', // Bar color (light teal)
-            borderColor: '#1d59a8', // Border color of bars
-            borderWidth: 1 // Border width
-          },
-          {
-            label: 'March', // Label for the dataset
-            data: [ 315,], // PMPM Cost data for each month
-            backgroundColor: '#ad4b20', // Bar color (light teal)
-            borderColor: '#ad4b20', // Border color of bars
-            borderWidth: 1 // Border width
-          },
-          {
-            label: 'April', // Label for the dataset
-            data: [320,], // PMPM Cost data for each month
-            backgroundColor: '#e3882e', // Bar color (light teal)
-            borderColor: '#e3882e', // Border color of bars
-            borderWidth: 1 // Border width
-          },
-        
-        ]
+            label: 'PMPM Cost ($)',
+            data: [320, 415, 295, 352,328,401,421,298,342,326,375,318], // PMPM Cost Data
+            borderColor: '#1d59a8', // ✅ Single Line Color
+            backgroundColor:'transparent',
+            borderWidth: 2, // Line Thickness
+            pointBackgroundColor: '#1d59a8', // Data Point Color
+            pointRadius: 5, // Size of Data Points
+            fill: true, // ✅ Enables soft area fill (optional)
+          }
+        ],
       },
       options: {
-        //  responsive: true,
-        responsive:true,
+        responsive: true,
         maintainAspectRatio: false,
         scales: {
           x: {
             title: {
               display: true,
-              //text: 'Months' // Label for X-axis
-            }
+              text: 'Months', // Label for X-axis
+            },
           },
           y: {
+            beginAtZero:true,
             title: {
               display: true,
-              text: 'PMPM Cost ($)' // Label for Y-axis
+              text: 'PMPM Cost ($)', // Label for Y-axis
             },
-            // ticks: {
-            //   beginAtZero: false, // Start from the lowest PMPM value
-            //   callback: (value) => `$${value}` // Format the ticks as currency
-            // }
-          }
+          },
         },
-      
         plugins: {
           datalabels: {
-            // anchor: 'end',
-            // align: 'end',
             formatter: (value: number) => value.toString(),
-            color:'#fff'
+            color: '#000',
+            align:'start'
           },
           legend: {
             display: true,
             position: "bottom",
-            align: "center"
-          }
-        }
-        
+            align: "center",
+          },
+        },
       },
-      
     });
+    
     
  
   }

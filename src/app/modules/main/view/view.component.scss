@@ -15,13 +15,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0rem // Space between boxes and arrows
 }
 
 .box {
-  width: 172px;
+  width: 132px;
   text-align: center;
-  height: 172px;
+  height: 132px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -48,13 +49,15 @@ button {
 .arrow {
   font-size: 72px;
   color: black;
+  margin-bottom: 42px !important;
 }
 .box{
   position: relative;
+  flex-direction: column;
 }
 .box-text{
-  position: absolute;
-    bottom: -42px;
+  // position: absolute;
+  //   bottom: -42px;
     color: #000;
 }
 
@@ -67,6 +70,38 @@ button {
     width: 104px;
     img{
       height: 64px;
+    }
+  }
+}
+
+.box-text{
+  width: 132px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 16px !important;
+}
+
+.box{
+  &:last-child{
+    width: 104px !important;
+    height: 104px !important;
+    img{
+      height: 60px;
+    }
+  }
+}
+.box-container{
+  div{
+    &:last-child{
+      .box{
+        width: 104px !important;
+        height: 104px !important;
+        img{
+          height: 60px;
+        }
+      }
     }
   }
 }

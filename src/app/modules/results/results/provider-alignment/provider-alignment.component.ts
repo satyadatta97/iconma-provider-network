@@ -73,79 +73,7 @@ export class ProviderAlignmentComponent {
     //   },
       
     // });
-    var ctx = document.getElementById("QPPTCRChart");
-var qualityProgramm = new Chart("QPPTCRChart", {
-  type: 'bar', // Bar chart
-  data: {
-    labels: ['Provider A', 'Provider B', 'Provider C', 'Provider D'], // Providers
-    datasets: [
-      {
-        label: 'Quality Program Participation (Before)',
-        data: [50, 60, 55, 60], // Before values
-        backgroundColor: '#278327',
-        borderColor: '#278327',
-        borderWidth: 1,
-      },
-      {
-        label: 'Quality Program Participation (After)',
-        data: [90, 95, 100, 100], // After values
-        backgroundColor: '#278327',
-        borderColor: '#278327',
-        borderWidth: 1,
-      },
-      {
-        label: 'Training Completion Rate (%) (Before)',
-        data: [60, 62, 65, 60], // Before values
-        backgroundColor: 'rgba(52, 85, 164, 0.5)',
-        borderColor: '#3455a4',
-        borderWidth: 1,
-      },
-      {
-        label: 'Training Completion Rate (%) (After)',
-        data: [90, 95, 100, 100], // After values
-        backgroundColor: '#3455a4',
-        borderColor: '#3455a4',
-        borderWidth: 1,
-      },
-    ],
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-      x: {
-        title: {
-          display: true,
-          //text: 'Providers',
-        },
-        stacked: false,
-      },
-      y: {
-        beginAtZero: true,
-        title: {
-          display: true,
-          text: 'Percentage (%)',
-        },
-        ticks: {
-          callback: (value) => `${value}%`,
-        },
-      },
-    },
-    plugins: {
-      legend: {
-        display: true,
-        position: "bottom",
-        align: "center",
-      },
-      datalabels: {
-        // anchor: 'end',
-        // align: 'end',
-        formatter: (value: number) => value.toString(),
-        color:'#fff'
-      },
-    },
-  },
-});
+    
 
     var ctx = document.getElementById("ASTCRDCBeforeChart");
     var atcrdcdata = new Chart("ASTCRDCBeforeChart", {
@@ -155,7 +83,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
         datasets: [
           {
             label: 'Before',
-            data: [70, 53, 67],
+            data: [0.66, 0.92, 0.77],
             backgroundColor: 'rgba(66, 165, 245, 0.2)',
             borderColor: '#42a5f5',
             borderWidth: 2,
@@ -163,7 +91,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
           },
           {
             label: 'After',
-            data: [105, 83, 92],
+            data: [0.94, 0.99, 0.91],
             backgroundColor: 'rgba(245, 66, 227, 0.2)',
             borderColor: 'rgba(245, 66, 227, 1)',
             borderWidth: 2,
@@ -179,7 +107,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
             beginAtZero: true,
            
             ticks: {
-              stepSize: 30,
+              stepSize: 0.5,
               callback: (value) => `${value}%`,
             },
             grid: {
@@ -215,7 +143,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
          
           {
             label: 'Before',
-            data: [61, 78, 60],
+            data: [0.58, 0.75, 0.88],
             backgroundColor: 'rgba(102, 187, 106, 0.2)',
             borderColor: '#66bb6a',
             borderWidth: 2,
@@ -223,7 +151,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
           },
           {
             label: 'After',
-            data: [78, 85, 85],
+            data: [0.89, 0.82, 0.96],
             backgroundColor: 'rgba(28, 89, 168, 0.2)',
             borderColor: 'rgba(28, 89, 168, 1)',
             borderWidth: 2,
@@ -240,7 +168,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
             beginAtZero: true,
           
             ticks: {
-              stepSize: 30,
+              stepSize: 0.5,
               callback: (value) => `${value}%`,
             },
             grid: {
@@ -276,7 +204,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
         
           {
             label: 'Before',
-            data: [67, 70, 69],
+            data: [0.67, 0.81, 0.76],
             backgroundColor: 'rgba(255, 167, 38, 0.2)',
             borderColor: '#ffa726',
             borderWidth: 2,
@@ -284,7 +212,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
           },
           {
             label: 'After',
-            data: [95, 100, 99],
+            data: [0.74, 0.95, 0.85],
             backgroundColor: 'rgba(46, 132, 46, 0.2)',
             borderColor: 'rgba(46, 132, 46, 1)',
             borderWidth: 2,
@@ -300,7 +228,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
             beginAtZero: true,
           
             ticks: {
-              stepSize: 30,
+              stepSize: 0.5,
               callback: (value) => `${value}%`,
             },
             grid: {
@@ -336,7 +264,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
          
           {
             label: 'Before',
-            data: [58, 67, 64],
+            data: [0.65, 0.80, 0.80],
             backgroundColor: 'rgba(171, 71, 188, 0.2)',
             borderColor: '#ab47bc',
             borderWidth: 2,
@@ -344,7 +272,7 @@ var qualityProgramm = new Chart("QPPTCRChart", {
           },
           {
             label: 'After',
-            data: [83, 95, 92],
+            data: [0.66,1.00,0.95],
             backgroundColor: 'rgba(251, 196, 72, 0.2)',
             borderColor: 'rgba(251, 196, 72, 1)',
             borderWidth: 2,
@@ -360,7 +288,67 @@ var qualityProgramm = new Chart("QPPTCRChart", {
             beginAtZero: true,
           
             ticks: {
-              stepSize: 30,
+              stepSize: 0.5,
+              callback: (value) => `${value}%`,
+            },
+            grid: {
+              color: '#e0e0e0',
+            },
+          },
+        },
+        responsive:true,
+         maintainAspectRatio: false,
+       
+         plugins: {
+          // title: {
+          //   display: true,
+          //   text: 'Past Alerts and Future Scheduled Actions'
+          // },
+          legend: {
+            display: true,
+            position: "bottom",
+            align: "center"
+          },
+          
+        }
+         
+       },
+      
+    });
+    var ctx = document.getElementById("ASTCRDCBeforeChartFour");
+    var atcrdcdatafour = new Chart("ASTCRDCBeforeChartFour", {
+      type: "radar",
+      data: {
+        labels: ['Alignment Score (%)', 'Training Completion Rate (%)', 'Data Compliance (%)'], // Metrics
+        datasets: [
+         
+          {
+            label: 'Before',
+            data: [0.51, 0.82, 0.92],
+            backgroundColor: 'rgba(171, 71, 188, 0.2)',
+            borderColor: '#ab47bc',
+            borderWidth: 2,
+            pointBackgroundColor: '#ab47bc',
+          },
+          {
+            label: 'After',
+            data: [0.82,0.87,0.94],
+            backgroundColor: 'rgba(72, 251, 141, 0.2)',
+            borderColor: 'rgb(89, 181, 77)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(251, 196, 72, 1)',
+          },
+        ]
+        
+      },
+      options: {
+        //  responsive: true,
+        scales: {
+          r: {
+            beginAtZero: true,
+          
+            ticks: {
+              stepSize: 0.5,
               callback: (value) => `${value}%`,
             },
             grid: {
@@ -389,7 +377,6 @@ var qualityProgramm = new Chart("QPPTCRChart", {
     });
 
 
-
     var ctx = document.getElementById("FRTASChart");
     var feedbacsk = new Chart("FRTASChart", {
       type: "scatter",
@@ -399,10 +386,11 @@ var qualityProgramm = new Chart("QPPTCRChart", {
           {
             label: 'Providers',
             data: [
-              { x: 2, y: 90, label: 'Provider A' }, // Feedback Response Time = 2, Alignment Score = 90
-              { x: 5, y: 78, label: 'Provider B' }, // Feedback Response Time = 5, Alignment Score = 78
-              { x: 1, y: 95, label: 'Provider C' }, // Feedback Response Time = 1, Alignment Score = 95
-              { x: 3, y: 83, label: 'Provider D' }, // Feedback Response Time = 3, Alignment Score = 83
+              { x: 1, y: 0.99, label: 'Provider A' }, // Feedback Response Time = 2, Alignment Score = 90
+              { x: 1.65, y: 0.90, label: 'Provider B' }, // Feedback Response Time = 5, Alignment Score = 78
+              { x: 2, y: 0.82, label: 'Provider C' }, // Feedback Response Time = 1, Alignment Score = 95
+              { x: 1, y: 1.00, label: 'Provider D' }, // Feedback Response Time = 3, Alignment Score = 83
+              { x: 5, y: 0.74, label: 'Provider E' }, // Feedback Response Time = 3, Alignment Score = 83
             ],
             backgroundColor: 'rgba(54, 162, 235, 0.6)', // Blue color for data points
             borderColor: 'rgba(54, 162, 235, 1)', // Darker blue for border
@@ -454,6 +442,81 @@ var qualityProgramm = new Chart("QPPTCRChart", {
          
        },
       
+    });
+
+
+    var ctx = document.getElementById("QPPTCRChart");
+    var qualityProgramm = new Chart("QPPTCRChart", {
+      type: 'bar', // Bar chart
+      data: {
+        labels: ['Provider A', 'Provider B', 'Provider C', 'Provider D'], // Providers
+        datasets: [
+          {
+            label: 'Quality Program Participation (Before)',
+            data: [50, 60, 55, 60], // Before values
+            backgroundColor: '#278327',
+            borderColor: '#278327',
+            borderWidth: 1,
+          },
+          {
+            label: 'Quality Program Participation (After)',
+            data: [90, 95, 100, 100], // After values
+            backgroundColor: '#278327',
+            borderColor: '#278327',
+            borderWidth: 1,
+          },
+          {
+            label: 'Training Completion Rate (%) (Before)',
+            data: [60, 62, 65, 60], // Before values
+            backgroundColor: 'rgba(52, 85, 164, 0.5)',
+            borderColor: '#3455a4',
+            borderWidth: 1,
+          },
+          {
+            label: 'Training Completion Rate (%) (After)',
+            data: [90, 95, 100, 100], // After values
+            backgroundColor: '#3455a4',
+            borderColor: '#3455a4',
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          x: {
+            title: {
+              display: true,
+              //text: 'Providers',
+            },
+            stacked: false,
+          },
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Percentage (%)',
+            },
+            ticks: {
+              callback: (value) => `${value}%`,
+            },
+          },
+        },
+        plugins: {
+          legend: {
+            display: true,
+            position: "bottom",
+            align: "center",
+          },
+          datalabels: {
+            // anchor: 'end',
+            // align: 'end',
+            formatter: (value: number) => value.toString(),
+            color:'#fff'
+          },
+        },
+      },
     });
   }
 }

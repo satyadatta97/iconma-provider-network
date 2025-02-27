@@ -16,14 +16,14 @@ export class OperationalEfficiencyComponent {
         datasets: [
           {
             label: 'Before ',
-          data: [5183], // Data points for each period
+          data: [16044.54], // Data points for each period
           backgroundColor: ['#FF6384'], // Bar colors
           borderColor: ['#FF6384'],
           borderWidth: 1,
           },
           {
             label: 'After ',
-          data: [ 3791], // Data points for each period
+          data: [ 11735.45], // Data points for each period
           backgroundColor: [ '#36A2EB'], // Bar colors
           borderColor: [ '#36A2EB'],
           borderWidth: 1,
@@ -72,18 +72,18 @@ export class OperationalEfficiencyComponent {
     var savings = new Chart("CostSavingsChart", {
       type: 'bar' as ChartType, // Use line chart for area effect
       data: {
-        labels: ['Operational Costs per Month ($)', ], // X-axis labels
+        labels: ['Operational Costs (%)', ], // X-axis labels
         datasets: [
           {
           label: 'Before ',
-          data: [500974,], // Operational cost data
+          data: [56,], // Operational cost data
           backgroundColor: ['#FF5733',], // Bar colors
           borderColor: ['#FF5733'],
           borderWidth: 1,
           },
           {
             label:'After ',
-            data: [400779], // Operational cost data
+            data: [44], // Operational cost data
             backgroundColor: [ '#33B5E5'], // Bar colors
             borderColor: [ '#0099CC'],
             borderWidth: 1,
@@ -135,7 +135,7 @@ export class OperationalEfficiencyComponent {
         datasets: [
           {
             label: 'Before ',
-            data: [57], // Data points for before and after
+            data: [46], // Data points for before and after
             backgroundColor: [ '#af480f',], // Colors for bars
             borderColor: [ '#af480f',],
             borderWidth: 1,

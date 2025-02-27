@@ -18,30 +18,37 @@ export class PatientScoreComponent {
         datasets: [
           {
           label: 'Provider A', // Chart label
-          data: [7.5], // Scores
+          data: [8.4], // Scores
           backgroundColor: ['#4CAF50',], // Bar colors
           borderColor: ['#388E3C',], // Border colors
           borderWidth: 1 // Border width
          },
          {
           label: 'Provider B', // Chart label
-          data: [ 8.2,], // Scores
+          data: [ 7.9], // Scores
           backgroundColor: ['#FF9800',], // Bar colors
           borderColor: ['#F57C00', ], // Border colors
           borderWidth: 1 // Border width
          },
          {
           label: 'Provider C', // Chart label
-          data: [ 9.8,], // Scores
+          data: [ 8.8], // Scores
           backgroundColor: [ '#2196F3', ], // Bar colors
           borderColor: [ '#1976D2', ], // Border colors
           borderWidth: 1 // Border width
          },
          {
           label: 'Provider D', // Chart label
-          data: [ 8.9], // Scores
-          backgroundColor: [ '#FFC107'], // Bar colors
+          data: [ 7.2], // Scores
+          backgroundColor: [ '#FFC007'], // Bar colors
           borderColor: [ '#FFA000'], // Border colors
+          borderWidth: 1 // Border width
+         },
+         {
+          label: 'Provider E', // Chart label
+          data: [ 8.1], // Scores
+          backgroundColor: [ '#3455a4'], // Bar colors
+          borderColor: [ '#3455a4'], // Border colors
           borderWidth: 1 // Border width
          }
       ]

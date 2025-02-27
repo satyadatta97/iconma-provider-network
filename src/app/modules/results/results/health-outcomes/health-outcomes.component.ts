@@ -83,20 +83,20 @@ var DetectionsCaptured = new Chart("AlertDetectionCapturedChart", {
           'Hypertension',
           'Diabetes Risk',
           'Respiratory Issues',
-          'Cardiac Irregularities',
-          'Mental Health Flags'
+          'Mental Health Flags',
+          'Cancer',
         ],
         datasets: [
           {
             label: 'Alerts Issued',
-            data: [1195, 828, 521, 278, 219],
+            data: [9304, 6245, 2389, 782, 1056],
             backgroundColor: '#42A5F5',
             borderColor: '#1E88E5',
             borderWidth: 1
           },
           {
             label: 'Follow-up Actions Taken',
-            data: [985, 703, 413, 276, 177],
+            data: [4372, 1998, 286, 32, 53],
             backgroundColor: '#66BB6A',
             borderColor: '#43A047',
             borderWidth: 1
@@ -219,7 +219,7 @@ var DetectionsCaptured = new Chart("AlertDetectionCapturedChart", {
           },
           {
             label: 'Current',
-            data: [7], // 85% adherence after 
+            data: [14.2], // 85% adherence after 
             backgroundColor: '#2b57a5',
             borderColor: '#2b57a5',
             borderWidth: 1
