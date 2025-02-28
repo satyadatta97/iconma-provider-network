@@ -264,7 +264,7 @@
 }
 .dashboard-nav{
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background: #005baa;
 }
 .ic-class{
   height: 16px !important;
@@ -367,6 +367,22 @@
   transform: rotate(180deg);  /* Rotate the arrow when the item is active */
 }
 .heading{
-  color: #005baa;
+  color: #fff;
   font-weight: 600;
+}
+.ic-footer{
+  background: #005baa;
+  color: #fff;
+  padding: 1rem;
+  p{
+    text-align: center;
+    font-size: 14px;
+    a{
+      color: #fff;
+    }
+  }
+}
+.home-section{
+  height: calc(100vh - 53px);
+    overflow-y: auto;
 }

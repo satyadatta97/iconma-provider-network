@@ -197,7 +197,7 @@ body,html,h1,h2,h3,h4,h5,h6,p,ul,li,a,span,ol{
     padding: 0.25rem 0.5rem !important;
 }
 .main-content-area{
-    height: calc(100vh - 86px);
+    height: calc(100vh - 138px);
     overflow-y: auto;
 }
 .h-440{
@@ -396,13 +396,13 @@ body,html,h1,h2,h3,h4,h5,h6,p,ul,li,a,span,ol{
     .each-tab-slider {
       cursor: pointer;
       // margin: 0px 16px;
-      padding: 6px 6px;
+      padding: 6px 8px;
       white-space: pre;
       position: relative;
       font-size: var(--application-font-size) !important;
       border-right: 1px solid #ccc;
       &:first-child {
-        margin-left: 0px;
+        padding-left: 0px;
       }
       &:last-child {
         margin-right: 0px;
@@ -433,4 +433,7 @@ th{
         font-size: 14px !important;
         font-weight: 500;
     }
+}
+.text-light{
+    color: var(--theme-light-color);
 }

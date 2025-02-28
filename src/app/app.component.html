@@ -1,10 +1,10 @@
 <div class="sidebar close">
-  <div class="logo-details d-flex justify-content-center" *ngIf="showLogo1 == true">
+  <!-- <div class="logo-details d-flex justify-content-center" *ngIf="showLogo1 == true">
     <img src="../assets/img/iconma-fav.svg" height="42">
   </div>
   <div class="logo-details d-flex justify-content-center" *ngIf="showLogo2 == true">
     <img src="../assets/img/iconma.svg" height="48">
-  </div>
+  </div> -->
   <ul class="nav-links">
     <!-- <li>
       <div class="iocn-link">
@@ -67,12 +67,15 @@
         <div class="nav-search-section ml-3">
           <input type="search" class="form-control p-2" placeholder="Search Here">
         </div> -->
-        <h5 class="heading">Quality Improvements and Efficiency by optimizing provider networks</h5>
+        <div class="logo-details d-flex justify-content-center">
+          <img src="../assets/img/iconma.svg" height="48">
+        </div> 
+        <h5 class="heading ml-3">Quality Improvements and Efficiency by optimizing provider networks</h5>
       </div>
       <div class="nav-right">
         <div ngbDropdown class="d-inline-block profile-drop" display="dynamic">
           <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>
-            <img src="../assets/img/notification.svg" class="notification-bell">
+            <img src="../assets/img/notification-light.svg" class="notification-bell">
             <span class="notification-count">16</span>
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="notification-dropdown">
@@ -230,7 +233,7 @@
         </div>
         <div ngbDropdown class="d-inline-block profile-drop">
           <button type="button" class="btn" id="dropdownBasic1" ngbDropdownToggle>
-            <span class="mr-2">Administrator</span>
+            <span class="mr-2 text-light">Administrator</span>
             <img src="../assets/img/avatar-2.jpg">
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="pro-drop">
@@ -246,3 +249,8 @@
     </div>
   </div>
 </section>
+<div class="ic-footer">
+  <div class="container-fluid">
+    <p>&copy;-2025 ICONMA,&nbsp;L.L.C. &nbsp;All Rights Reserved. &nbsp;<a [routerLink]="['/terms-conditions']" class="policy underline">Terms & Conditions</a>/<a [routerLink]="['/privacy-policy']" class="policy underline">Privacy Policy</a></p>
+  </div>
+</div>
