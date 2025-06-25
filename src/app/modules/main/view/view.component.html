@@ -2,22 +2,35 @@
  <div class="container-fluid mt-4">
     <div class="box-container">
         <ng-container *ngFor="let box of boxes; let i = index" >
-              <div>
+              <div [ngClass]="{
+              'custom-box': i === 1 || i === 2 || i === 3  
+              }" >
                 <div class="box" (click) = "selectBox($event,i,box)"
-              [ngClass]="{'running': currentIndex === i, 'completed': i < currentIndex}" >
-              <!-- <button type = "button" (click) = "selectBox(i,box)"></button> -->
+              [ngClass]="{'running': currentIndex === i, 
+              'completed': i < currentIndex,
+              'custom-style': i === 1 || i === 2 || i === 3  
+              }" 
+
+              >
+            
                <img src="{{box.imageUrl}}" height="84">
              
             </div>
-            <span class="box-text" >{{ box.text }}</span>
+            <span class="box-text" [ngClass]="{
+              'custom-align': i === 1 || i === 2 || i === 3  
+              }"[innerHTML]="box.text">{{ box.text }}</span>
               </div>
-            <!-- Arrow Between Boxes -->
-            <span *ngIf="i < boxes.length - 1" class="arrow">
-              <!-- ⇢ -->
-               <img src="../../../../assets/img/arrow.svg" width="70" height="24">
+            
+            <span *ngIf="i < boxes.length - 1" class="arrow"  [ngClass]="{'custom-arrow': i === 1 || i === 2 || i === 3}" 
+            >
+               <img src="../../../../assets/img/arrow.svg" width="70" height="24" class="arow">
             </span>
+
+
           </ng-container>
-      
+         <!-- <div class="outer-box">
+           <p>Steps in EDA </p>
+         </div> -->
     </div>
   </div>
   <div class="text-center mt-5 mr-4 pt-5">

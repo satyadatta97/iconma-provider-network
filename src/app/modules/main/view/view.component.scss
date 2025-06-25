@@ -83,21 +83,21 @@ button {
   margin-top: 16px !important;
 }
 
-.box{
-  &:last-child{
-    width: 104px !important;
-    height: 104px !important;
-    img{
-      height: 60px;
-    }
-  }
-}
+// .box{
+//   &:last-child{
+//     width: 104px !important;
+//     height: 104px !important;
+//     img{
+//       height: 60px;
+//     }
+//   }
+// }
 .box-container{
   div{
     &:last-child{
       .box{
-        width: 104px !important;
-        height: 104px !important;
+        width: 104px;
+        height: 104px;
         img{
           height: 60px;
         }
@@ -105,3 +105,80 @@ button {
     }
   }
 }
+.box-container{
+  div:nth-child(2){
+    .box{
+      width: 104px;
+      height: 104px;
+      img{
+        height: 60px;
+      }
+    }
+    
+    }
+  }
+  .custom-style {
+    width: 90px;
+    height: 90px;
+    img{
+      height: 52px;}
+  }
+  // .arrow{
+  //   &:nth-child(2){
+  //     img{
+        
+  //       height: 44px;
+  //     }
+  //   }
+  // }
+ 
+  // .custom-arrow{
+    
+  // }
+  .custom-box{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 40px !important;
+    z-index: 9999999 !important;
+  }
+
+  
+  .custom-align{
+    text-align: left;
+    // &:last-child{
+    //   //text-align: center;
+    //   // margin-right: 16px !important;
+    // }
+  }
+  .custom-arrow{
+    img{
+      width: 48px !important;
+      height: 16px !important;
+    }
+  }
+  // .custom-box{
+  //   .box-text{
+  //     &:nth-child(4){
+  //       text-align: center !important;
+  //     }
+  //   }
+  // }
+
+  .box-container{
+    position: relative;
+  }
+  // .outer-box{
+  //   height: 164px;
+  //   position: absolute;
+  //   width: 448px;
+  //   content: "";
+  //   border: 2px dotted #000;
+  //   left: 310px;
+  //   background: #cccccc70;
+  //   border-radius: 8px;
+  //   p{
+  //     position: absolute;
+  //     bottom: -31px;
+  //     left: 40%;
+  //   }
+  // }
